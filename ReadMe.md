@@ -1,6 +1,19 @@
 # Weather Data Lakehouse
 This is a project that requires me to create a data lakehouse that can be used used as single source of truth for data users
 that are interested at looking into device info and recorded data.
+I wrote two [Spark](https://spark.apache.org/) pipelines that ingest and cleanse the data:
+* one pipeline to process *device information* (the `csv` file)
+* the other to process *device data* (the actual data points recorded by devices).
+
+Pipelines can be composed of multiple steps and have to create the datasets needed to match the
+requirements that are given below.
+
+Additionally, as a basic example of report, create a third pipeline that:
+
+* takes as input the cleansed data,
+* joins the *device data* with the *device info*,
+* aggregates the data per month and area,
+* and computes average values.
 
 ### Data Users
 
