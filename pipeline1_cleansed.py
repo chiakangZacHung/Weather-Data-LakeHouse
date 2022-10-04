@@ -48,4 +48,4 @@ df_fromPipeline1.write \
   .format("delta") \
   .partitionBy("arrival_date") \
   .mode("append") \
-  .save(output_directory+str_date_time)
+  .save(output_directory+'/'+str_date_time)
