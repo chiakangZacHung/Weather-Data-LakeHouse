@@ -1,5 +1,7 @@
 # Weather Data Lakehouse
 google colab notebook link: https://colab.research.google.com/drive/1QsZu394GuN9aBa15yBSzZVDPW3_IcZ_M?usp=sharing
+# Setup Instruction
+pip install delta-spark==2.1.0
 
 This is a project that requires me to create a data lakehouse that can be used used as single source of truth for data users
 that are interested at looking into device info and recorded data.
