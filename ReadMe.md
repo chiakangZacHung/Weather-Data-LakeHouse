@@ -19,6 +19,12 @@ pip install delta-spark==2.1.0
 
 [pipeline3](https://github.com/chiakangZacHung/Weather-Data-LakeHouse/blob/main/pipeline3.py) takes the cleansed device information from from a user defined input directory, and the device data from input directory 2. The pipeline aggregates two tables, store the file using timestamp in the directory called mergedData. The pipeline also aggregates the data per month and area and store them in directory "month" and "area" respectively.
 `python pipeline3.py [inputDirectory1] [inputDirectory2]`
+
+The table is partition by "arrival_date." This information can be used to optimize the queries.
+
+The function concerning remove duplicates is not optimized because it is not possible to know how long the next duplicate will arrive, assuming the arriving files are not ordered by timestamp.
+
+The pipeline assumes that only at most 1 file will arrive in the input folder each day. 
 ## General Information
 I wrote two [Spark](https://spark.apache.org/) pipelines that ingest and cleanse the data:
 * one pipeline to process *device information* (the `csv` file)
