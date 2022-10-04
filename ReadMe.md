@@ -9,7 +9,7 @@ that are interested at looking into device info and recorded data.
 [pipeline1](https://github.com/chiakangZacHung/Weather-Data-LakeHouse/blob/main/pipeline1.py) takes the latest device_information file from a user defined input directory and stores the file using timestamp in the specified output directory.
 `python pipeline1.py [inputDirectory] [outputDirectory]`
 
-[pipeline1_cleansed](https://github.com/chiakangZacHung/Weather-Data-LakeHouse/blob/main/pipeline1_cleansed.py)) takes the device information from from a user defined input directory, which should be the output directory of pipeline1. The pipeline performs cleaning and store the file using timestamp in the specified output directory.
+[pipeline1_cleansed](https://github.com/chiakangZacHung/Weather-Data-LakeHouse/blob/main/pipeline1_cleansed.py) takes the device information from from a user defined input directory, which should be the output directory of pipeline1. The pipeline performs cleaning and store the file using timestamp in the specified output directory.
 `python pipeline1_cleansed.py [inputDirectory] [outputDirectory]`
 
 [pipeline2](https://github.com/chiakangZacHung/Weather-Data-LakeHouse/blob/main/pipeline2.py) takes the device data from from a user defined input directory. The pipeline store the file using timestamp in the specified output directory.
