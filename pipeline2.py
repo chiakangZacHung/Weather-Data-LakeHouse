@@ -43,4 +43,4 @@ device_info=spark.read.option("header",True).csv(latest_file)
 device_info.write \
   .format("delta") \
   .mode("append") \
-  .save(output_directory+str_date_time)
+  .save(output_directory+'/'+str_date_time)
