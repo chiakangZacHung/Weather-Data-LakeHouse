@@ -3,6 +3,8 @@ This is a project that requires me to create a data lakehouse that can be used u
 that are interested at looking into device info and recorded data.
 ## Google colab notebook link: 
 https://colab.research.google.com/drive/1QsZu394GuN9aBa15yBSzZVDPW3_IcZ_M?usp=sharing
+
+The notebook contains the output using test cases
 ## Setup Instruction
 pip install delta-spark==2.1.0
 ## Specific Information
