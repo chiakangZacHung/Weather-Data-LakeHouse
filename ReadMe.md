@@ -8,10 +8,13 @@ that are interested at looking into device info and recorded data.
 ## Specific Information
 [pipeline1](https://github.com/chiakangZacHung/Weather-Data-LakeHouse/blob/main/pipeline1.py) takes the latest device_information file from a user defined input directory and stores the file using timestamp in the specified output directory.
 `python pipeline1.py [inputDirectory] [outputDirectory]`
+
 [pipeline1_cleansed]([https://github.com/chiakangZacHung/Weather-Data-LakeHouse/blob/main/pipeline1.py](https://github.com/chiakangZacHung/Weather-Data-LakeHouse/blob/main/pipeline1_cleansed.py)) takes the device information from from a user defined input directory, which should be the output directory of pipeline1. The pipeline performs cleaning and store the file using timestamp in the specified output directory.
 `python pipeline1_cleansed.py [inputDirectory] [outputDirectory]`
+
 [pipeline2](https://github.com/chiakangZacHung/Weather-Data-LakeHouse/blob/main/pipeline2.py) takes the device data from from a user defined input directory. The pipeline store the file using timestamp in the specified output directory.
 `python pipeline2.py [inputDirectory] [outputDirectory]`
+
 [pipeline3](https://github.com/chiakangZacHung/Weather-Data-LakeHouse/blob/main/pipeline3.py) takes the cleansed device information from from a user defined input directory, and the device data from input directory 2. The pipeline aggregates two tables, store the file using timestamp in the directory called mergedData. The pipeline also aggregates the data per month and area and store them in directory "month" and "area" respectively.
 `python pipeline3.py [inputDirectory1] [inputDirectory2]`
 ## General Information
